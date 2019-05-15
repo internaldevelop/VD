@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd 
+		http://www.springframework.org/schema/aop  
+            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+            http://www.springframework.org/schema/task
+		http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+
+	<!-- spring的定时器配置 -->
+	<!-- <task:scheduled-tasks>
+		监测管理平台>环境设置>任务扫描是否完成的定时器： 1秒执行一次
+		<task:scheduled ref="MonitorScanstatusTask" method="monitor"
+			cron="0/1 * * * * ?" />
+	</task:scheduled-tasks> -->
+	   <task:scheduled-tasks>
+        <!--服务器状态是否超负荷： 1分钟执行一次 -->
+        <!--task:scheduled ref="SysInfoTask" method="checkRatio"
+                        cron="0 0/1 * * * ?"/-->
+        
+         <task:scheduled ref="monitorTask" method="executePush"
+                        cron="*/1 * * * * ?"/>
+    </task:scheduled-tasks>
+</beans>
