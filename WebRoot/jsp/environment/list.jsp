@@ -97,7 +97,7 @@
 <!--top-->
 <div class="top_title02">
    <div class="top_title_img"><img src="<%=request.getContextPath() %>/images/right_icon01.png" width="14" height="16"></div>
-   <div class="top_title_word">工控协议模糊测试工具</div>
+   <div class="top_title_word">工业控制系统安全测试及漏洞挖掘工具</div>
    <div class="top_title_word">&gt;</div>
    <div class="top_title_word">环境设置</div>
    <div class="top_title_word">&gt;</div>
@@ -192,7 +192,7 @@
 	        </tr>
 	        <tr>
 	            <td colspan="4" class="search_input" style="width:720px;">
-	            	工控协议模糊测试工具<span><hr></span>
+	            	工业控制系统安全测试及漏洞挖掘工具<span><hr></span>
 	            </td>
 	            
 	            <td class="search_btn">
