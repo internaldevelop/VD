@@ -81,7 +81,7 @@ var basePath='<%=basePath%>';
     <div class="main_search">
        <div class="top_title02">
         <div class="top_title_img"><img src="<%=request.getContextPath() %>/images/right_icon01.png" width="14" height="16"></div>
-        <div class="top_title_word">工控协议模糊测试工具</div>
+        <div class="top_title_word">工控协议漏洞挖掘工具</div>
         <div class="top_title_word">&gt;</div>
         <div class="top_title_word">系统配置</div>
         <div class="top_title_word">&gt;</div>

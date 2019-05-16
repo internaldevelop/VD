@@ -18,7 +18,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>工控协议模糊测试工具</title>
+<title>工控协议漏洞挖掘工具</title>
 <link href="<%=request.getContextPath() %>/commons/css/newcss.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/commons/js/jquery.js"></script>
 </head>

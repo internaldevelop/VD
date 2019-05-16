@@ -77,7 +77,7 @@ $(function(){
 			<img src="<%=request.getContextPath()%>/images/right_icon01.png"
 				width="14" height="16">
 		</div>
-		<div class="top_title_word">工控协议模糊测试工具</div>
+		<div class="top_title_word">工控协议漏洞挖掘工具</div>
 		<div class="top_title_word">&gt;</div>
 		<div class="top_title_word">系统信息</div>
 		<div class="top_title_word">&gt;</div>
@@ -87,7 +87,7 @@ $(function(){
 	<div class="main_table">
 		
 		<div class="table_title">
-				<div>工控协议模糊测试工具版本</div>
+				<div>工控协议漏洞挖掘工具版本</div>
 			    <div class="right_input02">
 			    </div>
 			</div>
@@ -96,7 +96,7 @@ $(function(){
 						<tbody>
 							<tr>
 								<td style="width: 200px;">
-									<img src="<%=request.getContextPath()%>/images/hardware1.png"/> &nbsp;工控协议模糊测试工具版本
+									<img src="<%=request.getContextPath()%>/images/hardware1.png"/> &nbsp;工控协议漏洞挖掘工具版本
 								</td>
 								<td colspan="3" style="text-align: left;padding-left:20px;">
 									<span id="version" title="重启"><img  name="version" class="btn"  src="<%=request.getContextPath()%>/images/version1.png"/> &nbsp; 版本号 : ${version}</span>

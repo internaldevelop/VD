@@ -17,7 +17,7 @@
 <meta http-equiv="Expires" content="0">
 <jsp:include  page="/commons/jsp/socketio.jsp"/>
 <%-- <link rel="shortcut icon" href="<%=request.getContextPath() %>/images/LOGO.ico" type="image/x-icon" /> --%>
-<title>工控协议模糊测试工具</title>
+<title>工控协议漏洞挖掘工具</title>
 <link href="<%=request.getContextPath() %>/commons/css/newcss.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/commons/js/jquery.js"></script>
 <script type="text/javascript">
@@ -138,7 +138,7 @@ function quit() {
                 </div>
             </div>
         </div>
-        <div class="concet_div concet_mar">产品版本: <%=EHCacheUtil.get("VERSION")==null?"":EHCacheUtil.get("VERSION")%><br />产品名称: 工控协议模糊测试工具<br />产品型号：IVM6000<br /></div><%--  new PropertiesUtil("sysConfig.properties").readProperty("version")--%>
+        <div class="concet_div concet_mar">产品版本: <%=EHCacheUtil.get("VERSION")==null?"":EHCacheUtil.get("VERSION")%><br />产品名称: 工控协议漏洞挖掘工具<br />产品型号：IVM6000<br /></div><%--  new PropertiesUtil("sysConfig.properties").readProperty("version")--%>
         <div class="popupbox_copyright"><%--版权所有©北京威努特技术有限公司<br />--%>2015-2020。保留一切权利</div>
     </div>
 </div>

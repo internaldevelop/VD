@@ -119,7 +119,7 @@ function interval_progressScan(t){
 			<img src="<%=request.getContextPath()%>/images/right_icon01.png"
 				width="14" height="16">
 		</div>
-		<div class="top_title_word">工控协议模糊测试工具</div>
+		<div class="top_title_word">工控协议漏洞挖掘工具</div>
 		<div class="top_title_word">&gt;</div>
 		<div class="top_title_word">系统配置</div>
 		<div class="top_title_word">&gt;</div>
@@ -137,7 +137,7 @@ function interval_progressScan(t){
 			<tbody>
 				<tr>
 					<td style="width: 200px;">
-						<img src="<%=request.getContextPath()%>/images/topu_icon06.png"/> &nbsp;工控协议模糊测试工具电源控制
+						<img src="<%=request.getContextPath()%>/images/topu_icon06.png"/> &nbsp;工控协议漏洞挖掘工具电源控制
 					</td>
 					<td style="width:120px;text-align:left;padding-left:20px;">
 						<span id="btcsShutdown" title="关机"><img  class="btn" src="<%=request.getContextPath()%>/images/power.png" />&nbsp; 关机</span>
@@ -146,7 +146,7 @@ function interval_progressScan(t){
 						<span id="btcsReboot" title="重启"><img name="btcsReboot"  class="btn" src="<%=request.getContextPath()%>/images/reboot.png"/>&nbsp; 重新启动</span>
 					</td>
 					<td style="text-align:left;">
-						工控协议模糊测试工具关机、重启功能。
+						工控协议漏洞挖掘工具关机、重启功能。
 					</td>
 				</tr>
 				<tr>
@@ -157,7 +157,7 @@ function interval_progressScan(t){
 						<span id="btbcReboot" title="重启"><img  name="btbcReboot" class="btn"  src="<%=request.getContextPath()%>/images/reboot.png"/> &nbsp; 重新启动</span>
 					</td>
 					<td style="text-align:left;">
-						通过工控协议模糊测试工具设备220V AC output 为PLC供电,在自动测试组网下,该功能可对被测设备实现电源控制。
+						通过工控协议漏洞挖掘工具设备220V AC output 为PLC供电,在自动测试组网下,该功能可对被测设备实现电源控制。
 					</td>
 				</tr>
 			</tbody>
@@ -171,7 +171,7 @@ function interval_progressScan(t){
 		</div>
 		<div class="box">
 			<div class="header">
-				工控协议模糊测试工具IP
+				工控协议漏洞挖掘工具IP
 			</div>
 			<div class="content">
 				<form name="forminter " id="forminter"
