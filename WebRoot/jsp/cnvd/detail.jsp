@@ -1,19 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>   
-<jsp:include  page="/commons/jsp/title.jsp"/>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<jsp:include page="/commons/jsp/title.jsp" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
 <!--
-button{padding:0px;}
-.main_table{text-align:center;}
-.main_table > button > a{padding:5px 20px;text-decoration:none;display:block;}
-.main_table table{margin-top:20px;}
-.main_table td{text-align:left;border:1px solid #ffffff; padding:10px;background-color:#d9d9d9; }
-.main_table .label{ width:100px;text-align:right;font-weight:bold;}
-.main_table div.table_title div{text-align: left;}
-caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
+button {
+	padding: 0px;
+}
+
+.main_table {
+	text-align: center;
+}
+
+.main_table>button>a {
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+}
+
+.main_table table {
+	margin-top: 20px;
+}
+
+.main_table td {
+	text-align: left;
+	border: 1px solid #ffffff;
+	padding: 10px;
+	background-color: #d9d9d9;
+}
+
+.main_table .label {
+	width: 100px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.main_table div.table_title div {
+	text-align: left;
+}
+
+caption {
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: left;
+	padding-left: 20px;
+}
 -->
 </style>
 </head>
@@ -21,21 +54,23 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 	<div class="index_body02">
 		<!--top-->
 		<div class="top_title02">
-	        <div class="top_title_img"><img src="<%=request.getContextPath() %>/images/right_icon01.png" width="14" height="16"></div>
-	        <div class="top_title_word">管理平台</div>
-	        <div class="top_title_word">&gt;</div>
-	        <div class="top_title_word">漏洞库</div>
-	        <div class="top_title_word">&gt;</div>
-	        <div class="top_title_word">漏洞信息</div>
+			<div class="top_title_img">
+				<img src="<%=request.getContextPath() %>/images/right_icon01.png"
+					width="14" height="16">
+			</div>
+			<div class="top_title_word">管理平台</div>
+			<div class="top_title_word">&gt;</div>
+			<div class="top_title_word">漏洞库</div>
+			<div class="top_title_word">&gt;</div>
+			<div class="top_title_word">漏洞信息</div>
 		</div>
 		<!--table-->
 		<div class="main_table">
 			<div class="table_title">
 				<div>漏洞信息</div>
-			    <div class="right_input02">
-			    </div>
+				<div class="right_input02"></div>
 			</div>
-			<div style="clear:both;" ></div>
+			<div style="clear: both;"></div>
 			<table>
 				<caption>${cnvd.cnvdName }</caption>
 				<tbody>
@@ -47,7 +82,7 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 						<td class="label">发布时间</td>
 						<td>${cnvd.releaseTime }</td>
 					</tr>
-					<tr >
+					<tr>
 						<td class="label">危害级别</td>
 						<td>${cnvd.hazardLevel }</td>
 					</tr>
@@ -62,7 +97,7 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 						</tr>
 					</c:if>
 					<c:if test="${not empty cnvd.bugtraqId }">
-						<tr >
+						<tr>
 							<td class="label">BUGTRAQ ID</td>
 							<td>${cnvd.bugtraqId }</td>
 						</tr>
@@ -71,7 +106,7 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 						<td class="label">CVEID</td>
 						<td>${cnvd.cveId }</td>
 					</tr>
-					
+
 					<tr>
 						<td class="label">漏洞描述</td>
 						<td>${cnvd.description }</td>
@@ -92,22 +127,17 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 						<td class="label">厂商补丁</td>
 						<td><c:if test="${empty cnvd.patch}">
 								(无补丁信息)
-							</c:if>
-							<c:if test="${not empty cnvd.patch}">
+							</c:if> <c:if test="${not empty cnvd.patch}">
 								${cnvd.patch }
-							</c:if>
-						</td>
+							</c:if></td>
 					</tr>
 					<tr>
 						<td class="label">验证信息</td>
-						<td>
-							<c:if test="${empty cnvd.verify }">
+						<td><c:if test="${empty cnvd.verify }">
 								(暂无验证信息)
-							</c:if>
-							<c:if test="${not empty cnvd.verify }">
+							</c:if> <c:if test="${not empty cnvd.verify }">
 								${cnvd.verify }
-							</c:if>
-						</td>
+							</c:if></td>
 					</tr>
 					<tr>
 						<td class="label">报送时间</td>
@@ -123,9 +153,11 @@ caption{font-size:20px;font-weight:bolder;text-align:left;padding-left: 20px;}
 					</tr>
 				</tbody>
 			</table>
-			<button><a href="<%=request.getContextPath()%>/cnvd/list.do"> 返 回 </a></button>	
-			</div>
+			<button>
+				<a href="<%=request.getContextPath()%>/cnvd/list.do"> 返 回 </a>
+			</button>
 		</div>
+	</div>
 	</div>
 </body>
 </html>

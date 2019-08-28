@@ -6,14 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
 <title>管理平台</title>
- <base target="_self"> 
+<base target="_self">
 	<link href="<%=request.getContextPath()%>/commons/css/newcss.css"
 		rel="stylesheet" type="text/css" />
-		<script src="<%=request.getContextPath()%>/commons/js/jquery.js"></script>
-<style type="text/css">
+	<script src="<%=request.getContextPath()%>/commons/js/jquery.js"></script>
+	<style type="text/css">
 body {
-	margin: auto; height : auto; background-color : #ffffff; padding : 0px;
-	overflow : auto; overflow-x : hidden;
+	margin: auto;
+	height: auto;
+	background-color: #ffffff;
+	padding: 0px;
+	overflow: auto;
+	overflow-x: hidden;
 	scrollbar-face-color: #eff8e6;
 	scrollbar-shadow-color: #edf2e3;
 	scrollbar-highlight-color: #ffffff;
@@ -146,7 +150,8 @@ body {
 					</ul>
 				</div>
 			</li>
-		</ul><%--
+		</ul>
+		<%--
 		<ul>
 			<li class="left_button_choice">
 				<div class="left_img">
@@ -202,11 +207,13 @@ body {
 					<ul>
 						<li>
 							<div class="left_img02">
-								<img src="<%=request.getContextPath()%>/images/icons/protocol.png"
+								<img
+									src="<%=request.getContextPath()%>/images/icons/protocol.png"
 									width="16" height="16">
 							</div>
 							<div class="left_word02">
-								<a href="<%=request.getContextPath()%>/protocol/queryProtocolList.do"  
+								<a
+									href="<%=request.getContextPath()%>/protocol/queryProtocolList.do"
 									target="mainFrame">协议识别</a>
 							</div>
 						</li>
@@ -306,7 +313,7 @@ body {
 				</div>
 			</li>
 			</ul> --%>
-			<%--<ul>
+		<%--<ul>
 			<li class="left_button_choice">
 				<div class="left_img">
 					<img src="<%=request.getContextPath()%>/images/left_icon02.png"
@@ -410,21 +417,22 @@ body {
 						</li>
 					</ul>
 					<ul>
-                        <li>
-                            <div class="left_img02">
-                                <img
-                                    src="<%=request.getContextPath()%>/images/icons/operationlog.png"
-                                    width="16" height="16">
-                            </div>
-                            <div class="left_word02">
-                                <a href="<%=request.getContextPath()%>/operationlog/operationLogPage.do"
-                                    target="mainFrame">系统日志</a>
-                            </div>
-                        </li>
-                    </ul>
+						<li>
+							<div class="left_img02">
+								<img
+									src="<%=request.getContextPath()%>/images/icons/operationlog.png"
+									width="16" height="16">
+							</div>
+							<div class="left_word02">
+								<a
+									href="<%=request.getContextPath()%>/operationlog/operationLogPage.do"
+									target="mainFrame">系统日志</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</li>
-			
+
 		</ul>
 		<ul>
 			<li class="left_button_choice">
@@ -444,24 +452,26 @@ body {
 									width="16" height="16">
 							</div>
 							<div class="left_word02">
-								<a href="<%=request.getContextPath()%>/loginContorller/updateTojsp.do"
+								<a
+									href="<%=request.getContextPath()%>/loginContorller/updateTojsp.do"
 									target="mainFrame">修改密码</a>
 							</div>
 						</li>
 					</ul>
-					 <ul>
-                        <li>
-                            <div class="left_img02">
-                                <img
-                                    src="<%=request.getContextPath()%>/images/icons/operation.png"
-                                    width="16" height="16">
-                            </div>
-                            <div class="left_word02">
-                                <a href="<%=request.getContextPath()%>/loginContorller/lockUser.do"
-                                    target="mainFrame">锁定配置</a>
-                            </div>
-                        </li>
-                    </ul>
+					<ul>
+						<li>
+							<div class="left_img02">
+								<img
+									src="<%=request.getContextPath()%>/images/icons/operation.png"
+									width="16" height="16">
+							</div>
+							<div class="left_word02">
+								<a
+									href="<%=request.getContextPath()%>/loginContorller/lockUser.do"
+									target="mainFrame">锁定配置</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</li>
 		</ul>

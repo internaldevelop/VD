@@ -1,9 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ page import="com.wnt.web.testexecute.entry.*" %>
-<%@ page import="org.wnt.core.ehcache.*" %>
-<%@ page import="com.wnt.web.testexecute.controller.*" %>
-<%@ page import="com.wnt.web.protocol.ProtocolController.*" %> 
-<%@ page import="common.*" %>
+<%@ page import="com.wnt.web.testexecute.entry.*"%>
+<%@ page import="org.wnt.core.ehcache.*"%>
+<%@ page import="com.wnt.web.testexecute.controller.*"%>
+<%@ page import="com.wnt.web.protocol.ProtocolController.*"%>
+<%@ page import="common.*"%>
 <%
 String path = request.getContextPath();
 String basePdfPath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+"/pdf/";
@@ -36,34 +36,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <base href="<%=basePath%>">
-    
-    <title>我的模板库</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<link rel="stylesheet" href="jsp/testresult/css/demo.css" type="text/css">
-	<link rel="stylesheet" href="jsp/testsetup/css/zTreeStyle/zTreeStyle.css" type="text/css">
-	<link  rel="stylesheet"  href="<%=request.getContextPath()%>/jsp/testsetup/css/testsetup.css" ></link>
-	<script type="text/javascript">   
+<head>
+<base href="<%=basePath%>">
+
+<title>我的模板库</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<link rel="stylesheet" href="jsp/testresult/css/demo.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="jsp/testsetup/css/zTreeStyle/zTreeStyle.css" type="text/css">
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/jsp/testsetup/css/testsetup.css"></link>
+<script type="text/javascript">   
 	   var basePath = "<%=request.getContextPath()%>/";
 	   var basePdfPath = "<%=basePdfPath%>";
 	</script>
-	<script type="text/javascript" src="commons/js/jquery.js"></script>
-	<jsp:include page="/commons/jsp/atrDialog.jsp" />
-	<script type="text/javascript" src="jsp/testsetup/js/jquery.ztree.core-3.5.js"></script>
-	<% if(testStatus == 0) {%>
-	<script type="text/javascript" src="jsp/testsetup/js/jquery.ztree.exedit-3.5.js"></script>
-	<% } %>
-	<script type="text/javascript" src="jsp/testresult/js/tree.js"></script>
-	
-  </head>
-  
-  
+<script type="text/javascript" src="commons/js/jquery.js"></script>
+<jsp:include page="/commons/jsp/atrDialog.jsp" />
+<script type="text/javascript"
+	src="jsp/testsetup/js/jquery.ztree.core-3.5.js"></script>
+<% if(testStatus == 0) {%>
+<script type="text/javascript"
+	src="jsp/testsetup/js/jquery.ztree.exedit-3.5.js"></script>
+<% } %>
+<script type="text/javascript" src="jsp/testresult/js/tree.js"></script>
+
+</head>
+
+
 <script>
     var userName="<%=session.getAttribute("userName")%>"; 
 	$(function(){
@@ -93,37 +98,46 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   });
   
   </script>
- 
+
 <style type="text/css">
-        #bg{ display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: #DCDCDC;  z-index:1001;  -moz-opacity: 0.7;  opacity:.70;  filter: alpha(opacity=70);}
+#bg {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #DCDCDC;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity = 70);
+}
 </style>
 
-  <body>
-  <div id="bg"></div>
-  		<div id="table_title">
-			<div>
-				我的模板库
-			</div>
+<body>
+	<div id="bg"></div>
+	<div id="table_title">
+		<div>我的模板库</div>
+	</div>
+	<div style="margin: 10px">
+		<ul>
+			<li><input type="button" id="exprotPdf" class="kc_btn"
+				value="导出PDF" /> <!-- <input type="button" id="exprotExcel" class="kc_btn" value="导出EXL"/> -->
+				<input type="button" id="exprotData" value="导出数据包" class="kc_btn" />
+				<input type="button" id="deleteData" value="删除数据包" class="kc_btn" />
+			</li>
+		</ul>
+	</div>
+	<div style="margin: 0px 15px 10px 0px">
+		<input type="hidden" id="type" value="2" />
+		<div>
+			<ul id="treeDemo" class="ztree"></ul>
 		</div>
-		<div style="margin:10px">
-			<ul>
-				<li>
-					<input type="button" id="exprotPdf" class="kc_btn" value="导出PDF"/>
-				    <!-- <input type="button" id="exprotExcel" class="kc_btn" value="导出EXL"/> -->
-					<input type="button" id="exprotData"  value="导出数据包" class="kc_btn"/>
-					<input type="button" id="deleteData"  value="删除数据包" class="kc_btn"/>
-				</li>
-			</ul>
-		</div>
-    	<div style="margin:0px 15px 10px 0px">
-    		<input type="hidden" id="type" value="2"/>
-			<div>
-				<ul id="treeDemo" class="ztree"></ul>
-			</div>
-		</div>
-		<form action="<%=request.getContextPath()%>/testresult/exprodExcel.do">
-			<input type="hidden" name="id" id="id"/>
-			<input type="hidden" name="type" id="type"/>
-		</form>
-  </body>
+	</div>
+	<form action="<%=request.getContextPath()%>/testresult/exprodExcel.do">
+		<input type="hidden" name="id" id="id" /> <input type="hidden"
+			name="type" id="type" />
+	</form>
+</body>
 </html>

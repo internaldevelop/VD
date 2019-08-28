@@ -7,14 +7,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="<%=request.getContextPath()%>/commons/css/newcss.css"
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="<%=request.getContextPath()%>/commons/css/newcss.css"
 	rel="stylesheet" type="text/css" />
 </head>
 <body class="main_body">
 	<div class="body_popupbox01"></div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath()%>/commons/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/commons/js/jquery-1.8.3.min.js"></script>
 <jsp:include page="/commons/jsp/atrDialog.jsp" />
 <script type="text/javascript">
 	$(function(){

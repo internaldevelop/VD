@@ -49,8 +49,7 @@
 	   var basePath = "<%=request.getContextPath()%>/";
 	   var basePdfPath = "<%=basePdfPath%>";
 	</script>
-<script type="text/javascript"
-	src="commons/js/jquery.js"></script>
+<script type="text/javascript" src="commons/js/jquery.js"></script>
 <script type="text/javascript"
 	src="commons/js/ztree/jquery.ztree.core-3.5.js"></script>
 <%

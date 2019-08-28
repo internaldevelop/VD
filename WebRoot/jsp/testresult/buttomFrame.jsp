@@ -1,9 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ page import="com.wnt.web.testexecute.entry.*" %>
-<%@ page import="org.wnt.core.ehcache.*" %>
-<%@ page import="com.wnt.web.testexecute.controller.*" %>
-<%@ page import="com.wnt.web.protocol.ProtocolController.*" %> 
-<%@ page import="common.*" %>
+<%@ page import="com.wnt.web.testexecute.entry.*"%>
+<%@ page import="org.wnt.core.ehcache.*"%>
+<%@ page import="com.wnt.web.testexecute.controller.*"%>
+<%@ page import="com.wnt.web.protocol.ProtocolController.*"%>
+<%@ page import="common.*"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -81,7 +81,7 @@
 </head>
 
 <body>
-<div id="bg"></div>
+	<div id="bg"></div>
 	<div id="table_title">
 		<div>图形数据</div>
 	</div>
@@ -99,41 +99,41 @@
 		<div id="container0" class="div_container2" style="overflow: hidden">
 			<iframe src="jsp/testresult/soag_sandian.jsp" scrolling="no"
 				name="container01" id="container01" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 		<div id="container1" class="div_container">
 			<iframe src="jsp/testresult/soag_sandian.jsp" scrolling="no"
 				name="container11" id="container11" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 		<div id="container2" class="div_container">
 			<iframe src="jsp/testresult/soag.jsp" scrolling="no"
 				name="container21" id="container21" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 		<div id="container3" class="div_container">
 			<iframe src="jsp/testresult/soag_1.jsp" scrolling="no"
 				name="container31" id="container31" frameborder="0" height="230px"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 			<iframe src="jsp/testresult/soag_2.jsp" scrolling="no"
 				name="container32" id="container32" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 		<div id="container4" class="div_container">
 			<iframe src="jsp/testresult/soag.jsp" scrolling="no"
 				name="container41" id="container41" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 			<iframe src="jsp/testresult/soag.jsp" scrolling="no"
 				name="container42" id="container42" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 		<div id="container5" class="div_container">
 			<iframe src="jsp/testresult/soag.jsp" scrolling="no"
 				name="container51" id="container51" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 			<iframe src="jsp/testresult/soag.jsp" scrolling="no"
 				name="container52" id="container52" frameborder="0" height="100%"
-				width="98%" style="float:left;"></iframe>
+				width="98%" style="float: left;"></iframe>
 		</div>
 	</div>
 

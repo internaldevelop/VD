@@ -1,16 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="com.wnt.web.testexecute.entry.*" %>
-<!DOCTYPE html> 
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="com.wnt.web.testexecute.entry.*"%>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<link  rel="stylesheet"  href="<%=request.getContextPath()%>/jsp/testexecute/css/chart.css" ></link>
-<script type="text/javascript" src="<%=request.getContextPath()%>/jsp/testresult/js/jquery-1.9.1.min.js"></script>
-<script src="<%=request.getContextPath()%>/jsp/testresult/js/highstock.js"></script>
-<script src="<%=request.getContextPath()%>/jsp/testresult/js/exporting.js"></script>
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/jsp/testexecute/css/chart.css"></link>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/jsp/testresult/js/jquery-1.9.1.min.js"></script>
+<script
+	src="<%=request.getContextPath()%>/jsp/testresult/js/highstock.js"></script>
+<script
+	src="<%=request.getContextPath()%>/jsp/testresult/js/exporting.js"></script>
 
-<script type="text/javascript" src="<%=request.getContextPath() %>/jsp/testexecute/js/chart.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath() %>/jsp/testexecute/js/chart.js"></script>
 
 <script type="text/javascript">
 $(function(){
@@ -23,10 +28,10 @@ $(function(){
 </script>
 
 <body class="main_body">
-<div class="chatDiv" id="4">
-	<div style="width:480px;height:200px" id="4_1"></div>
-	<div style="width:480px;height:200px" id="4_2"></div>
-	<span id="info"></span>
-</div>
+	<div class="chatDiv" id="4">
+		<div style="width: 480px; height: 200px" id="4_1"></div>
+		<div style="width: 480px; height: 200px" id="4_2"></div>
+		<span id="info"></span>
+	</div>
 </body>
 </html>

@@ -2,119 +2,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>硬件检查</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		html,body{height:100%;padding:0px; margin:0px;}
-		img{width: 50PX;height: 50PX;}
-		.center{margin:35px auto;width: 520px;}
-		.center > div{ float:left;width:100%;  }
-		ul{padding:0;margin: 0;float:left;}
-		li{width: 52px;list-style: none;display: inline-block;margin-left: 10px;float:left;border:1px solid transparent;}
-		li span{display:block;text-align:center;}
-		hr{float:left; width:100%;margin-top: 20px;}
-		.do_y:hover{cursor: pointer;}
-		.do_y:hover span{background-color:lightblue;}
-	</style>
-	
+<title>硬件检查</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	width: 50PX;
+	height: 50PX;
+}
+
+.center {
+	margin: 35px auto;
+	width: 520px;
+}
+
+.center>div {
+	float: left;
+	width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+li {
+	width: 52px;
+	list-style: none;
+	display: inline-block;
+	margin-left: 10px;
+	float: left;
+	border: 1px solid transparent;
+}
+
+li span {
+	display: block;
+	text-align: center;
+}
+
+hr {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.do_y:hover {
+	cursor: pointer;
+}
+
+.do_y:hover span {
+	background-color: lightblue;
+}
+</style>
+
 </head>
 <body>
 	<div class="center">
 		<div id="diDiv">
 			<div>
-				 离散监视器  <input type="button" id="hardware_check" value="硬件检查" />
+				离散监视器 <input type="button" id="hardware_check" value="硬件检查" />
 			</div>
-			<h2>DI 输入 </h2>
-			<ul >
-				<li>
-					<img src="img/gray.jpg" />
-					<span>X0</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X1</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X2</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X3</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X4</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X5</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X6</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X7</span>
-				</li>
+			<h2>DI 输入</h2>
+			<ul>
+				<li><img src="img/gray.jpg" /> <span>X0</span></li>
+				<li><img src="img/gray.jpg"> <span>X1</span></li>
+				<li><img src="img/gray.jpg"> <span>X2</span></li>
+				<li><img src="img/gray.jpg"> <span>X3</span></li>
+				<li><img src="img/gray.jpg"> <span>X4</span></li>
+				<li><img src="img/gray.jpg"> <span>X5</span></li>
+				<li><img src="img/gray.jpg"> <span>X6</span></li>
+				<li><img src="img/gray.jpg"> <span>X7</span></li>
 			</ul>
 			<ul>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X8</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X9</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X10</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X11</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X12</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X13</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X14</span>
-				</li>
-				<li>
-					<img src="img/gray.jpg">
-					<span>X15</span>
-				</li>
+				<li><img src="img/gray.jpg"> <span>X8</span></li>
+				<li><img src="img/gray.jpg"> <span>X9</span></li>
+				<li><img src="img/gray.jpg"> <span>X10</span></li>
+				<li><img src="img/gray.jpg"> <span>X11</span></li>
+				<li><img src="img/gray.jpg"> <span>X12</span></li>
+				<li><img src="img/gray.jpg"> <span>X13</span></li>
+				<li><img src="img/gray.jpg"> <span>X14</span></li>
+				<li><img src="img/gray.jpg"> <span>X15</span></li>
 			</ul>
 		</div>
-		<hr/>
+		<hr />
 		<div class="do">
 			<h2>DO 输出</h2>
 			<ul>
-				<li id="do_y0" class="do_y" title="VD 220V">
-					<img src="img/red.jpg" />
-					<span>Y0</span>
+				<li id="do_y0" class="do_y" title="VD 220V"><img
+					src="img/red.jpg" /> <span>Y0</span></li>
+				<li id="do_y1" class="do_y"><img src="img/gray.jpg" /> <span>Y1</span>
 				</li>
-				<li id="do_y1" class="do_y">
-					<img src="img/gray.jpg" />
-					<span>Y1</span>
-				</li>
-				<li id="do_y2" class="do_y">
-					<img src="img/gray.jpg">
-					<span>Y2</span>
+				<li id="do_y2" class="do_y"><img src="img/gray.jpg"> <span>Y2</span>
 				</li>
 			</ul>
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath() %>/commons/js/jquery.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath() %>/commons/js/jquery.js"></script>
 <script type="text/javascript">
 	$(function(){
 		var intervalIndex = null;

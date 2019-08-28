@@ -1,46 +1,64 @@
 .tabs {
-    float:left;
-    background-image: url(../../../images/main_table_title.gif);
-    width:100%;
+	float: left;
+	background-image: url(../../../images/main_table_title.gif);
+	width: 100%;
 }
-.tabs ul 
-{
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
+
+.tabs ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
 }
-.tabs ul li
-{
-    float: left;
-    line-height: 24px;
-    margin: 0;
-    padding: 2px 20px 0 10px;
+
+.tabs ul li {
+	float: left;
+	line-height: 24px;
+	margin: 0;
+	padding: 2px 20px 0 10px;
 }
-.tab-nav{
-     background: url(../../../images/main_table_title.gif) repeat-y left center; padding:0 5px; float:left; font-size:12px; line-height:17px; margin-top:3px;
-     cursor:pointer;
+
+.tab-nav {
+	background: url(../../../images/main_table_title.gif) repeat-y left
+		center;
+	padding: 0 5px;
+	float: left;
+	font-size: 12px;
+	line-height: 17px;
+	margin-top: 3px;
+	cursor: pointer;
 }
-.tab-nav-action{
-    background: url(../../../images/mid_button02.gif) repeat-y left center; padding:0 5px; float:left; font-size:12px; line-height:17px; margin-top:3px;
-    cursor:pointer;
-    font-weight:bold;
+
+.tab-nav-action {
+	background: url(../../../images/mid_button02.gif) repeat-y left center;
+	padding: 0 5px;
+	float: left;
+	font-size: 12px;
+	line-height: 17px;
+	margin-top: 3px;
+	cursor: pointer;
+	font-weight: bold;
 }
-.tabs-body
-{
-    border-bottom: 0px solid #B4C9C6;
-    border-left: 0px solid #B4C9C6;
-    border-right: 0px solid #B4C9C6;
-    float: left;
-    padding: 5px 0 0;
-    width: 100%;
+
+.tabs-body {
+	border-bottom: 0px solid #B4C9C6;
+	border-left: 0px solid #B4C9C6;
+	border-right: 0px solid #B4C9C6;
+	float: left;
+	padding: 5px 0 0;
+	width: 100%;
 }
-.tabs-body div 
-{
-    padding:10px;
+
+.tabs-body div {
+	padding: 10px;
 }
-.div_container{
-	min-width:650px;height:220px;display:none;
+
+.div_container {
+	min-width: 650px;
+	height: 220px;
+	display: none;
 }
-.div_container2{
-	min-width:650px;height:220px;
+
+.div_container2 {
+	min-width: 650px;
+	height: 220px;
 }

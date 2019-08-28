@@ -1,14 +1,58 @@
 .env_area {
-	width:530px; height:80px; line-height:20px; background:#fff; border:1px #a9a9a9 solid;font-size:12px;resize:none;
+	width: 530px;
+	height: 80px;
+	line-height: 20px;
+	background: #fff;
+	border: 1px #a9a9a9 solid;
+	font-size: 12px;
+	resize: none;
 }
 
 .search_area {
-	width:180px; padding-left:10px;
+	width: 180px;
+	padding-left: 10px;
 }
 
-.main_table div.kc_search{ width:50px; float:left;}
-.main_table div.kc_search ul{ width:100%; margin:0px; padding:0px; float:left; margin-top:3px;  margin-bottom:3px;}
-.main_table div.kc_search li{ height:30px; margin:0px; padding:0px; list-style:none; color:#666; font-size:12px; text-align:right; float:left; line-height:30px;}
-.main_table div.kc_search ul.search_ul{ width:340px; margin-top:0px; margin-bottom:0px;}
-.main_table div.kc_search li.search_word{ width:120px; color:#666; font-size:12px; text-align:right;}
-.main_table div.kc_search li.search_input{ width:180px; padding-left:10px;} 
+.main_table div.kc_search {
+	width: 50px;
+	float: left;
+}
+
+.main_table div.kc_search ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.main_table div.kc_search li {
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	color: #666;
+	font-size: 12px;
+	text-align: right;
+	float: left;
+	line-height: 30px;
+}
+
+.main_table div.kc_search ul.search_ul {
+	width: 340px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.main_table div.kc_search li.search_word {
+	width: 120px;
+	color: #666;
+	font-size: 12px;
+	text-align: right;
+}
+
+.main_table div.kc_search li.search_input {
+	width: 180px;
+	padding-left: 10px;
+}

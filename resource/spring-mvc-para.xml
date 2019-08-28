@@ -13,14 +13,14 @@
             http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
-	<!-- ApplicationContext  -->
+	<!-- ApplicationContext -->
 	<bean class="org.wnt.core.uitl.ApplicationContextUtil"></bean>
 	<!-- 异常处理 -->
 	<!-- <bean id="exceptionResolver" class="org.wnt.core.exception.ExceptionHandler"></bean> -->
 	<!-- 日志处理 -->
 	<bean id="logService" class="org.wnt.core.log.LogService"></bean>
 
-	 <bean id="servicesockets" class = "com.wnt.server.startup.ServiceSockets"></bean> 
+	<bean id="servicesockets" class="com.wnt.server.startup.ServiceSockets"></bean>
 	<!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
 	<bean id="mappingJacksonHttpMessageConverter"
 		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">

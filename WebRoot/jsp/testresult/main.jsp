@@ -2,7 +2,7 @@
 <%@ page import="com.wnt.web.testexecute.entry.*"%>
 <%@ page import="org.wnt.core.ehcache.*"%>
 <%@ page import="com.wnt.web.testexecute.controller.*"%>
-<%@ page import="com.wnt.web.protocol.ProtocolController.*" %> 
+<%@ page import="com.wnt.web.protocol.ProtocolController.*"%>
 <%@ page import="common.*"%>
 <%
 String path = request.getContextPath();
@@ -10,16 +10,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <base href="<%=basePath%>">
-    <title>测试结果主页面</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<script type="text/javascript" src="<%=request.getContextPath()%>/commons/js/jquery.js" ></script>
-	<script type="text/javascript" src="<%=request.getContextPath() %>/commons/js/socketfun.js"></script>
+<head>
+<base href="<%=basePath%>">
+<title>测试结果主页面</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/commons/js/jquery.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath() %>/commons/js/socketfun.js"></script>
 <script type="text/javascript">	
 <%
 	int testStatus=0;
@@ -63,13 +65,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				},10000);			
 			}
 </script>
-  	</head>
-	<frameset rows="30px,100%,*" cols="*" frameborder="no" border="0" framespacing="0">
-		<frame src="jsp/testresult/topFrame.jsp" name="topFrame" scrolling="No" noresize="noresize"/>
-		<frameset cols="380px,*" frameborder="no" border="0" framespacing="0">
-			<frame src="jsp/testresult/leftFrame.jsp" name="leftFrame" scrolling="No" noresize="noresize"/>
-			<frame src="jsp/testresult/rightFrame.jsp" id="rightFrame" name="rightFrame" scrolling="No" noresize="noresize"/>
-		</frameset>
-		<%--<frame src="jsp/testresult/buttomFrame.jsp" name="buttomFrame" scrolling="auto" noresize="noresize"/>
-	--%></frameset>
+</head>
+<frameset rows="30px,100%,*" cols="*" frameborder="no" border="0"
+	framespacing="0">
+	<frame src="jsp/testresult/topFrame.jsp" name="topFrame" scrolling="No"
+		noresize="noresize" />
+	<frameset cols="380px,*" frameborder="no" border="0" framespacing="0">
+		<frame src="jsp/testresult/leftFrame.jsp" name="leftFrame"
+			scrolling="No" noresize="noresize" />
+		<frame src="jsp/testresult/rightFrame.jsp" id="rightFrame"
+			name="rightFrame" scrolling="No" noresize="noresize" />
+	</frameset>
+	<%--<frame src="jsp/testresult/buttomFrame.jsp" name="buttomFrame" scrolling="auto" noresize="noresize"/>
+	--%>
+</frameset>
 </html>

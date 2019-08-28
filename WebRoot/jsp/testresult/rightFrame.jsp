@@ -2,7 +2,7 @@
 <%@ page import="com.wnt.web.testexecute.entry.*"%>
 <%@ page import="org.wnt.core.ehcache.*"%>
 <%@ page import="com.wnt.web.testexecute.controller.*"%>
-<%@ page import="com.wnt.web.protocol.ProtocolController.*" %> 
+<%@ page import="com.wnt.web.protocol.ProtocolController.*"%>
 <%@ page import="common.*"%>
 <%
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();

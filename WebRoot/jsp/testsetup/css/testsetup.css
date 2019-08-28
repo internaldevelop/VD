@@ -1,59 +1,125 @@
-.div_main{
-	width:100%; height:100%;
-}
-.div_left{
-	width:100%; height:100%;border:0px solid red;float:left;margin:0px;min-width:350px;
-}
-.div_right{
-	width:100%; height:100%;border:0px solid red;float:left;margin:0px;
-}
-.div_up{
-	height:50%; border:0px solid red;
-}
-.div_down{
-	 height:50%;border:0px solid red;
+.div_main {
+	width: 100%;
+	height: 100%;
 }
 
-#showName{height:100%;border:1px solid black;overflow-y:auto;overflow-x:hidden;}
-#showName ul{background:#EAEAEA;border:1px solid;text-align:center;list-style-type:none;width:99%;}
-#showName ul li{list-style-type:none; font-size:14px; text-align:center;}
-
-#table_title{ height:29px; width:100%;background: url(../../../images/main_table_title.gif) repeat-x; border:1px #fff solid; border-top:2px #fff solid; color:#474246; line-height:29px; font-size:12px; font-weight:bold;}
-#table_title div{  width:200px; float:left; line-height:29px; margin-left:30px;}
-#table_title div.right_input{ float:right; width:150px;}
-
-
-aaaaashowName ul li{margin:0 0 0 170px;list-style-type:none; font-size:14px; text-align:center;}
-.kc_btn{ 
-	width:83px; height:25px; line-height:22px; background:#fff; border:1px #a9a9a9 solid;
-	background:url("../../../images/mid_button02.gif") no-repeat left top;
-	
-	
+.div_left {
+	width: 100%;
+	height: 100%;
+	border: 0px solid red;
+	float: left;
+	margin: 0px;
+	min-width: 350px;
 }
-.kc_btn:hover{ 
-	width:83px; height:25px; line-height:22px; background:#fff; border:1px #a9a9a9 solid;
-	background:url("../../../images/mid_button02_ch.gif") no-repeat left top;
+
+.div_right {
+	width: 100%;
+	height: 100%;
+	border: 0px solid red;
+	float: left;
+	margin: 0px;
+}
+
+.div_up {
+	height: 50%;
+	border: 0px solid red;
+}
+
+.div_down {
+	height: 50%;
+	border: 0px solid red;
+}
+
+#showName {
+	height: 100%;
+	border: 1px solid black;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#showName ul {
+	background: #EAEAEA;
+	border: 1px solid;
+	text-align: center;
+	list-style-type: none;
+	width: 99%;
+}
+
+#showName ul li {
+	list-style-type: none;
+	font-size: 14px;
+	text-align: center;
+}
+
+#table_title {
+	height: 29px;
+	width: 100%;
+	background: url(../../../images/main_table_title.gif) repeat-x;
+	border: 1px #fff solid;
+	border-top: 2px #fff solid;
+	color: #474246;
+	line-height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#table_title div {
+	width: 200px;
+	float: left;
+	line-height: 29px;
+	margin-left: 30px;
+}
+
+#table_title div.right_input {
+	float: right;
+	width: 150px;
+}
+
+aaaaashowName ul li {
+	margin: 0 0 0 170px;
+	list-style-type: none;
+	font-size: 14px;
+	text-align: center;
+}
+
+.kc_btn {
+	width: 83px;
+	height: 25px;
+	line-height: 22px;
+	background: #fff;
+	border: 1px #a9a9a9 solid;
+	background: url("../../../images/mid_button02.gif") no-repeat left top;
+}
+
+.kc_btn:hover {
+	width: 83px;
+	height: 25px;
+	line-height: 22px;
+	background: #fff;
+	border: 1px #a9a9a9 solid;
+	background: url("../../../images/mid_button02_ch.gif") no-repeat left
+		top;
 }
 /* @media(max-width:800px){
 	#tempDiv{
 	width:30% !important;
 	}
 } */
-
-.dfield{
+.dfield {
 	color: #666;
-    font-size: 12px;
-    margin-left:15px;
-    margin-top:10px;
-}
-.dfield span{
-	display:inline-block; 
-    margin-left:5px; 
-    width:6%;
-    text-align: right;
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 10px;
 }
 
-.dfield input{
-    margin-left:5px;
-    width:15%; 
+.dfield span {
+	display: inline-block;
+	margin-left: 5px;
+	width: 6%;
+	text-align: right;
+}
+
+.dfield input {
+	margin-left: 5px;
+	width: 15%;
 }

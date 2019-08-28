@@ -150,7 +150,7 @@ public class PdfServiceImpl implements PdfService {
 			endTime = Timestamp.valueOf(map2.get("ENDTIME").toString());
 		}
 		//{ "测试平台：", "漏洞挖掘测试平台 Version 001 R 001" }
-		String[][] content = { { "测试平台：", "工控协议模糊测试工具" }, { "被测设备：", name }, { "设备型号：", version },
+		String[][] content = { { "测试平台：", "通信规约模糊测试工具" }, { "被测设备：", name }, { "设备型号：", version },
 				{ "备注信息：", remark }, { "测试时间：", datetime(beginTime) + "到" + datetime(endTime) },
 				{ "报告生成：", DataUtils.formatDateTime() } };
 

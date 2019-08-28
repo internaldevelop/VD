@@ -2,7 +2,7 @@
 <%@ page import="com.wnt.web.testexecute.entry.*"%>
 <%@ page import="org.wnt.core.ehcache.*"%>
 <%@ page import="com.wnt.web.testexecute.controller.*"%>
-<%@ page import="com.wnt.web.protocol.ProtocolController.*" %> 
+<%@ page import="com.wnt.web.protocol.ProtocolController.*"%>
 <%@ page import="common.*"%>
 <%
 	String path = request.getContextPath();
@@ -25,8 +25,10 @@
 <meta http-equiv="description" content="This is my page">
 <link rel="stylesheet"
 	href="<%=request.getContextPath()%>/jsp/testsetup/css/testsetup.css"></link>
-<script type="text/javascript" src="<%=request.getContextPath()%>/commons/js/jquery.js" ></script>
-<script type="text/javascript" src="<%=request.getContextPath() %>/commons/js/socketfun.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/commons/js/jquery.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath() %>/commons/js/socketfun.js"></script>
 <script type="text/javascript">
 <%	
 	int testStatus=0;
@@ -79,7 +81,7 @@
 			}
 		
 		</script>
-		
+
 </head>
 <table height=100% width=100% border=0>
 	<Tr height=100%>
@@ -88,12 +90,12 @@
 				<div class="div_up">
 					<iframe src="jsp/testsetup/leftFrameUp.jsp" scrolling="no"
 						name="leftFrameUp" id="leftFrameUp" frameborder="0" height="100%"
-						width="100%" style="float:left;"></iframe>
+						width="100%" style="float: left;"></iframe>
 				</div>
 				<div class="div_down">
 					<iframe src="jsp/testsetup/leftFrameDown.jsp" scrolling="no"
 						name="leftFrameDown" id="leftFrameDown" frameborder="0"
-						height="100%" width="100%" style="float:left;"></iframe>
+						height="100%" width="100%" style="float: left;"></iframe>
 				</div>
 
 			</div>
@@ -102,7 +104,7 @@
 			<div class="div_right">
 				<iframe src="jsp/testsetup/centerFrame.jsp" name="centerFrame"
 					id="centerFrame" frameborder="0" height="100%" width="100%"
-					 onload='IFrameReSizeWidth("centerFrame");'></iframe>
+					onload='IFrameReSizeWidth("centerFrame");'></iframe>
 			</div>
 		</td>
 	</Tr>

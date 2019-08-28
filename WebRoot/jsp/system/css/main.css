@@ -1,53 +1,53 @@
 @CHARSET "UTF-8";
 
 .formtitle {
-    border-bottom: 1px solid #d0dee5;
-    height: 35px;
-    line-height: 35px;
-    margin-bottom: 28px;
-    position: relative;
-    margin-left:5px;
-    margin-right:5px;
+	border-bottom: 1px solid #d0dee5;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 28px;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .formtitle span {
-    border-bottom: 3px solid #66c9f3;
-    bottom: -1px;
-    float: left;
-    font-size: 12px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 3px;
-    position: absolute;
-    z-index: 100;
+	border-bottom: 3px solid #66c9f3;
+	bottom: -1px;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 3px;
+	position: absolute;
+	z-index: 100;
 }
 
-.Interface{
-	margin-bottom:15px;
+.Interface {
+	margin-bottom: 15px;
 }
 
-.Interface span{
-	 color: #666;
-    font-size: 12px;
-    text-align: right;
+.Interface span {
+	color: #666;
+	font-size: 12px;
+	text-align: right;
 }
 
-.inputs{
-	background: rgba(0, 0, 0, 0) url("../../../images/mid_button02.gif") no-repeat scroll left top;
-    border: 1px solid #a9a9a9;
-    height: 25px;
-    line-height: 22px;
-    width: 83px;
+.inputs {
+	background: rgba(0, 0, 0, 0) url("../../../images/mid_button02.gif")
+		no-repeat scroll left top;
+	border: 1px solid #a9a9a9;
+	height: 25px;
+	line-height: 22px;
+	width: 83px;
 }
 
-.divtitle{
+.divtitle {
 	margin-bottom: 15px;
 	font-size: 12px;
 }
 
-.divtitle span{
-	 
-    font-size: 12px;
-    text-align: right;
+.divtitle span {
+	font-size: 12px;
+	text-align: right;
 }

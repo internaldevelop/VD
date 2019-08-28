@@ -5,11 +5,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <script type="text/javascript" src="<%=path %>/jsp/testresult/js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="<%=path %>/jsp/testresult/js/highstock.1.2.5.js"></script>
-	<script type="text/javascript" src="<%=path %>/jsp/testresult/js/exporting.1.2.5.js"></script>
-	<script type="text/javascript">
+<head>
+<script type="text/javascript"
+	src="<%=path %>/jsp/testresult/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript"
+	src="<%=path %>/jsp/testresult/js/highstock.1.2.5.js"></script>
+<script type="text/javascript"
+	src="<%=path %>/jsp/testresult/js/exporting.1.2.5.js"></script>
+<script type="text/javascript">
 		
 		
 		$(function()
@@ -134,8 +137,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    }
 		
 	</script>
-  </head>
-  <body>
-    	<div id="container" style="height:200px"></div>
-  </body>
+</head>
+<body>
+	<div id="container" style="height: 200px"></div>
+</body>
 </html>

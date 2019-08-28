@@ -63,6 +63,7 @@ function goPageto(){
 </script>
 <input type="hidden" name="page_size" id="page_size"
 	value="${wntPage.page_size }" form="page_form">
-<input type="hidden" name="current_page" id="current_page" value="0" form="page_form">
+<input type="hidden" name="current_page" id="current_page" value="0"
+	form="page_form">
 <input type="hidden" name="total_page" id="total_page"
 	value="${wntPage.total_page}" form="page_form">

@@ -398,12 +398,22 @@
 100%
 {
 -webkit-transform
+
+
 :
+
  
+
 rotate
-(360deg);
+
+
+(360
+deg
+);
+
 
     
+
 }
 }
 @
@@ -414,12 +424,22 @@ keyframes ui-dialog-loading { 0% {
 100%
 {
 transform
+
+
 :
+
  
+
 rotate
-(360deg);
+
+
+(360
+deg
+);
+
 
     
+
 }
 }
 .ui-dialog-loading {

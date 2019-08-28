@@ -1,28 +1,30 @@
-.wrap{ 
-    font-size: 12px; 
-    margin:40px auto; 
-    width:400px; 
-} 
-/*进度条样式*/ 
-.progressbar_1{ 
-    background-color:#eee; 
-    height:16px; 
-    width:535px; 
-    border:1px solid #bbb; 
-    color:#222; 
-    float:left;
-} 
-.progressbar_1 .bar { 
-    background-color:#6CAF00; 
-    height:16px; 
-    width:0; 
-} 
-.progressNum{
-	float:left;
-	margin-left:10px;
+.wrap {
+	font-size: 12px;
+	margin: 40px auto;
+	width: 400px;
 }
-.progressName{
-	float:left;
-	margin-left:10px;
+/*进度条样式*/
+.progressbar_1 {
+	background-color: #eee;
+	height: 16px;
+	width: 535px;
+	border: 1px solid #bbb;
+	color: #222;
+	float: left;
 }
 
+.progressbar_1 .bar {
+	background-color: #6CAF00;
+	height: 16px;
+	width: 0;
+}
+
+.progressNum {
+	float: left;
+	margin-left: 10px;
+}
+
+.progressName {
+	float: left;
+	margin-left: 10px;
+}
