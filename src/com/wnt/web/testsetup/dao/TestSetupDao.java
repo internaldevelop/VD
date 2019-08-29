@@ -14,6 +14,9 @@ public interface TestSetupDao {
 	 * @return
 	 */
 	public List<Map<String, Object>> findAll(int type);
+		
+	//判断表LDWJ_TESTDEPLAYLIVE中当前PARENT是否已添加了NAME BY LVJZ
+	public int checkTemplate(int parentId ,String treeid);
 	
 	/**
 	 * 添加模板

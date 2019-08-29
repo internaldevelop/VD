@@ -32,6 +32,15 @@ public class TestSetupDaoImpl implements TestSetupDao {
 						+ type + " ORDER BY SEQUENCE,ID asc");
 	}
 
+
+	@Override
+	public int checkTemplate(int parentId ,String treeid){
+//判断表LDWJ_TESTDEPLAYLIVE中当前PARENT是否已添加了NAME BY LVJZ
+		String sql ="SELECT COUNT(*) from ldwj_testdeplaylive where PARENT =? and name = (SELECT NAME from LDWJ_TESTDEPLAYLIVE  where id=? )";		
+		int icount = jdbcTemplate.queryForObject(sql, new Object[]{parentId,treeid}, Integer.class);
+		return icount;
+	}
+	
 	@Override
 	public int insertTemplate(String sql) {
 		// TODO Auto-generated method stub

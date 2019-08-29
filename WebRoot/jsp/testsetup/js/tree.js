@@ -204,7 +204,7 @@ function addNonameData(treeId,type,installtype,code,testnum)
 				$.each(result.list, function(index, obj)
 				{
 					var html = '<ul tag="backgroundli">';
-					html += '<li><input type="checkbox" name="treeIdCheckbox" value="'+obj.ID+'"/>'+obj.NAME+'</li>';
+					html += '<li><input type="checkbox" name="treeIdCheckbox" checked="checked" value="'+obj.ID+'"/>'+obj.NAME+'</li>';
 					html += '<li><input type="hidden" name="treeId" value="'+obj.ID+'"/></li>';
 					html += '<li><input type="hidden" name="type" value="'+obj.TYPE+"@#"+obj.NAME+'"/></li>';
 					html += '</ul>';
@@ -222,7 +222,7 @@ function addNonameData(treeId,type,installtype,code,testnum)
 function appendUL(id, name, type)
 {
 	var html = '<ul tag="backgroundli">';
-	html += '<li><input type="checkbox" name="treeIdCheckbox" value="'+id+'"/>'+name+'</li>';
+	html += '<li><input type="checkbox" name="treeIdCheckbox" checked="checked" value="'+id+'"/>'+name+'</li>';
 	html += '<li><input type="hidden" name="treeId" value="'+id+'"/></li>';
 	html += '<li><input type="hidden" name="type" value="'+type+"@#"+name+'"/></li>';
 	html += '</ul>';

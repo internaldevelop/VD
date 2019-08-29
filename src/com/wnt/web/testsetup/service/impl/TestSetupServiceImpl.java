@@ -83,10 +83,21 @@ public class TestSetupServiceImpl implements TestSetupService {
 		} else {
 			parentId = (Integer) list.get(0).get("ID");
 		}
-
+		
 		for (int i = 0; i < treeId.length; i++) {
 			// SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss|SSS");
 			 //System.out.println("外层for :"+simpleDateFormat.format(new Date()));
+			
+			//判断表LDWJ_TESTDEPLAYLIVE中当前PARENT是否已添加了NAME BY LVJZ
+//			String msql ="SELECT COUNT(*) from ldwj_testdeplaylive where PARENT = "
+//					+parentId
+//					+ "and name = (SELECT NAME from LDWJ_TESTDEPLAYLIVE  where id="
+//					+ treeId[i]
+//					+ ")";
+			int icount = testSetupDao.checkTemplate(parentId,treeId[i]);
+			if(icount>0)
+				return;
+
 			sql = "INSERT INTO LDWJ_TESTDEPLAYLIVE(PARENT, TYPE, NAME, REMARK, DELTATUS, CREATETIME, CODE, INSTALLTYPE) "
 					+ " SELECT "
 					+ parentId

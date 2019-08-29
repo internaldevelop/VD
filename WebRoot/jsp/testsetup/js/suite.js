@@ -21,7 +21,7 @@ $(function()
 			$.each(result, function(index, obj)
 			{
 				var html = '<ul tag="backgroundli">';
-				html += '<li><input type="checkbox" name="treeIdCheckbox" value="'+obj.ID+'"/>'+obj.NAME+'</li>';
+				html += '<li><input type="checkbox" name="treeIdCheckbox" checked="checked" value="'+obj.ID+'"/>'+obj.NAME+'</li>';
 				html += '<li><input type="hidden" name="treeId" value="'+obj.ID+'"/></li>';
 				html += '<li><input type="hidden" name="type" value="'+obj.TYPE+"@#"+obj.NAME+'"/></li>';
 				html += '</ul>';

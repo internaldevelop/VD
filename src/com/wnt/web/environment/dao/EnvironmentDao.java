@@ -62,4 +62,5 @@ public interface EnvironmentDao {
 	public void updateStatus(String status);
 	
 	public void updateEth1(String ck);
+	
 }
