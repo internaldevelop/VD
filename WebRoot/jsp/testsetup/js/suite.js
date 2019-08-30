@@ -111,12 +111,47 @@ $(function()
 			atrshowmodal('请添加测试用例!');
 			return false;
 		}
-		var form = $('#suiteForm').serialize();
+		
+		//保存前先删除未选中的checkbox
+		var len = $('input[name=treeIdCheckbox]:not(:checked)').length;
+		if(len > 0)
+		{
+			$('input[name=treeIdCheckbox]:not(:checked)').each(function(index, obj){
+				$.ajax(
+				{
+					url:basePath+'testsetup/removeTemplate.do',
+					data:'treeId='+$(obj).val(),
+					dataType:'json',
+					success:function(result)
+					{
+						if(result.success)
+						{
+							$('#page_form').hide();
+							$(obj).parent().parent().remove();
+							$('#middis').show();
+							$('#middlediv').hide();
+						}
+					}
+				});
+			});
+		}
+
+		//保存时只包括选中的框 by lvjz
+		$("input[name='treeIdCheckbox']").each(function(){
+            if($(this).attr("checked")== 'checked'){
+                //是选中
+            }else{
+                //       td       tr   
+                $(this).parent().parent().find("input").removeAttr("name");
+            }
+        });
+		var formData = $('#suiteForm').serialize();
+
 		$.ajax(
 		{
 			url:basePath+'/testsetup/saveTestSuite.do',
 			type:'post',
-			data:form+'&name='+name,
+			data:formData+'&name='+name,
 			dataType:'json',
 			success:function(result)
 			{

@@ -216,6 +216,8 @@ public class TestSetupServiceImpl implements TestSetupService {
 				}
 			}
 		} else {
+			// 根据treeId 查找 插入新的记录
+			
 			// 根据名称插入新的记录(name)
 			String insert_sql = " insert into LDWJ_TESTDEPLAYLIVE(parent, name, remark, type)"
 					+ "	values(0,'" + name + "','模板添加数据', 2)";

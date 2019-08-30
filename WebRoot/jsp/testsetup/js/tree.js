@@ -224,6 +224,7 @@ function appendUL(id, name, type)
 	var html = '<ul tag="backgroundli">';
 	html += '<li><input type="checkbox" name="treeIdCheckbox" checked="checked" value="'+id+'"/>'+name+'</li>';
 	html += '<li><input type="hidden" name="treeId" value="'+id+'"/></li>';
+
 	html += '<li><input type="hidden" name="type" value="'+type+"@#"+name+'"/></li>';
 	html += '</ul>';
 	parent.frames["centerFrame"].$('#showName').append(html);
