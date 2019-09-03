@@ -238,13 +238,13 @@
 						<tr>
 							<td style="width: 60px;" class="search_word">开始端口:</td>
 							<td style="width: 300px;" class="search_input"><input
-								type='text' name='beginPort' id='beginPort'
+								type='text' name='beginPort' id='beginPort' maxlength="5"
 								value='${scanport.beginPort }' datatype="port" nullmsg="请输入开始端口"
 								errormsg="请输入合法的端口号！" /> <span class="Validform_checktip"
 								id="beginPortSpan"></span></td>
 							<td style="width: 60px;" class="search_word">结束端口:</td>
 							<td style="width: 300px;" class="search_input"><input
-								type='text' name='endPort' id='endPort'
+								type='text' name='endPort' id='endPort' maxlength="5"
 								value='${scanport.endPort }' datatype="portRange"
 								nullmsg="请输入结束端口" errormsg="请输入合法的端口号！" /> <span
 								class="Validform_checktip" id="endPortSpan"></span></td>
@@ -303,7 +303,7 @@
 						<tr>
 							<td style="width: 60px;" class="search_word">添加端口:</td>
 							<td style="width: 300px;" class="search_input"><input
-								type='text' name='portNum' id='portNum' datatype="port"
+								type='text' name='portNum' id='portNum' datatype="port" maxlength="5"
 								onblur="clearMsg()" errormsg="请输入合法的端口号！" /> <span
 								class="Validform_checktip"></span></td>
 							<td style="width: 60px;" class="search_word">端口类型:</td>
