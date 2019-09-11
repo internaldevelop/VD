@@ -171,7 +171,7 @@ body {
 							<td class="search_word"></td>
 							<td class="search_radio"><input type='radio' id="TESTRATESR"
 								name='TESTRATE' tvn="1" value="1" /> <input type='text'
-								id="TESTRATES" name='TESTRATES' size="5" maxlength="10"
+								id="TESTRATES" name='TESTRATES' size="5" maxlength="7"
 								class="text_testsetup"
 								onkeyup="this.value=this.value.replace(/\D/g,'')" />
 							<%-- onKeyUp="this.value=this.value.replace(/[^\d+$]/g,'');"

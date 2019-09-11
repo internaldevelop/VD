@@ -152,4 +152,6 @@ public interface TestResultService {
 	 * @return: Map<String,Object>
 	 */
 	public Map<String, Object> queryEquipmentDetailInResult(String testResultId);
+
+	public List<Map<String, Object>> statisFind(String beginDate, String endDate);
 }

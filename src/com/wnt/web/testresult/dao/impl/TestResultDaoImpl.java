@@ -217,6 +217,18 @@ public class TestResultDaoImpl implements TestResultDao {
 		String sql ="SELECT *  FROM LDWJ_TESTRESULT WHERE ID=?";
 		return jdbcTemplate.queryForMap(sql, testResultId);
 	}
-
+	
+	@Override
+	public List<Map<String, Object>> statisFind(String beginDate, String endDate) {
+		
+		String sql = "SELECT\n" +
+				"	a.date_name,\n" +
+				"	COUNT( 1 ) num \n" +
+				"FROM\n" +
+				"	( SELECT DATE_FORMAT( ts.CREATETIME, '%Y-%m-%d' ) date_name FROM LDWJ_TESTRESULT ts WHERE ts.CREATETIME > ? AND	ts.CREATETIME < ? AND ts.PARENTID IS NULL ) a \n" +
+				"GROUP BY\n" +
+				"	a.date_name";
+		return jdbcTemplate.queryForList(sql, beginDate, endDate);
+	}
 
 }

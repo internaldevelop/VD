@@ -1,6 +1,7 @@
 package com.wnt.web.testexecute.controller;
 
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -52,6 +53,7 @@ import common.TestExecuteUtil;
 public class TestExecuteController {
 	//EHCacheUtil.get("thread")
 	
+	private static int flag = 1;
 	
 	private final Logger log = Logger.getLogger(TestExecuteController.class.getName());
 
@@ -297,6 +299,7 @@ public class TestExecuteController {
 	@ResponseBody  
 	@RequestMapping("/startTest")
 	public Map startTest(HttpServletRequest request){
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 		try{
 			//判断是否有线程开启
 			//checkThread();
@@ -306,10 +309,15 @@ public class TestExecuteController {
 			//全部执行
 			TestExecuteUtil.testEntry.setStatus(1);
 			TestExecuteUtil.testEntry.setType(2);
+			
+			new TestThread(testSetupService,testExecuteService,pdfService).start();
 			EHCacheUtil.remove("r185");
-			//t.setName("全部测试线程-"+new Date().toLocaleString());
-			//启动线程
-			//t.start();
+			
+//			TestThread t = new TestThread(testSetupService,testExecuteService,pdfService);
+//			
+//			t.setName("全部测试线程-"+sdf.format(new Date()));
+//			//启动线程
+//			t.start();
 			EquipmentDef.logProgressDisplay = "";
 			map.put("status", "y");
 			
@@ -473,6 +481,7 @@ public class TestExecuteController {
 		//重启服务器后
 		//删除最后父节点后
 		if(TestEntry.first || EquipmentDef.check || EquipmentDef.update ||TestResultEntry.deleteStatus){
+//		if(true){
 			/*if(TestEntry.first || EquipmentDef.check || EquipmentDef.update){
 				//将旧的父节点生成pdf
 				List<Map<String, Object>> lst=this.testResultService.findLastParent();
@@ -548,6 +557,13 @@ public class TestExecuteController {
 			}
 			List<Map<String, Object>> monitorList=environmentService.findSelectMonitor(1);
 			EHCacheUtil.put("monitorList", monitorList);
+//			if (flag < 10) {
+//				flag++;
+//				EHCacheUtil.put("r185", "102");//zgh调试用
+//			} else {
+//				EHCacheUtil.put("r185", "104");//zgh调试用
+//			}
+			
 			//TestThread t=(TestThread) EHCacheUtil.get("thread");
 			//TestThread t=TestExecuteUtil.t;
 			if(TestExecuteUtil.testEntry!=null){

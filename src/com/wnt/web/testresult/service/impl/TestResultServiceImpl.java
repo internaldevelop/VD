@@ -492,4 +492,12 @@ public class TestResultServiceImpl implements TestResultService {
 		
 	}
 	
+	@Override
+	public List<Map<String, Object>> statisFind(String beginDate, String endDate) {
+		beginDate += " 00:00:00";
+		endDate += " 23:59:59";
+		List<Map<String, Object>> ls = testResultDao.statisFind(beginDate, endDate);
+		return ls;
+	}
+	
 }

@@ -85,6 +85,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             $("#deleteData").attr("disabled","disabled");            
         }else{
             $("#deleteData").removeAttr("disabled");
+            $("#statisData").removeAttr("disabled");
         }
 	});
 	
@@ -126,6 +127,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				value="导出PDF" /> <!-- <input type="button" id="exprotExcel" class="kc_btn" value="导出EXL"/> -->
 				<input type="button" id="exprotData" value="导出数据包" class="kc_btn" />
 				<input type="button" id="deleteData" value="删除数据包" class="kc_btn" />
+				<input type="button" id="statisData" value="结果统计" class="kc_btn" />
 			</li>
 		</ul>
 	</div>

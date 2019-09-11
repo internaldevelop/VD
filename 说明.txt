@@ -1,9 +1,9 @@
 
-vd_master ����Э��ģ�����Թ���
+vd_master 工控协议模糊测试工具
 
-vul_1.0.0  ��ҵ����ϵͳ��ȫ���Լ�©���ھ򹤾�
+vul_1.0.0  工业控制系统安全测试及漏洞挖掘工具
 
-protocol_vul_1.0.0 ����Э��©���ھ򹤾�
+protocol_vul_1.0.0 工控协议漏洞挖掘工具
 
-xintong_vul_1.0.0 ͨ�Ź�Լģ�����Թ���
+xintong_vul_1.0.0 通信规约模糊测试工具
 

@@ -293,6 +293,8 @@ function startTest(tId){
 		}
 	}
 }
+
+var find_num = 0;
 //测试的定时器，循环取得测试状态
 function fun_timeout_test(){
 	timeout_log=window.setTimeout(function(){
@@ -475,6 +477,11 @@ function fun_timeout_test(){
 							$(".progressbar_1").show();
 							$(".bar").css("width","0%");
 							$(".progressNum").html("0%");
+							
+							if(data.testEntry.progress == 104 && find_num == 1){
+								atrshowmodal( "执行成功" + find_num);
+							}
+							find_num = 1;
 							$("#logProgressDisplay").html("状态:未执行测试");
 						}else if(data.testEntry.status==3){
 							pauseStatus = 3;
@@ -617,6 +624,7 @@ function startSingleTest(o,index){
 //}
 //停止执行
 function stopTest(){
+	find_num = 0;
 	if(pauseStatus == 3){
 		pauseStatus = 0;
 		fun_timeout_test();

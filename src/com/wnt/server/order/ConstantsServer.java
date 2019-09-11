@@ -10,6 +10,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import javax.servlet.ServletContext;
 
 import org.springframework.web.context.ContextLoader;
+import org.wnt.core.uitl.PropertiesUtil;
 
 import com.corundumstudio.socketio.Configuration;
 import com.corundumstudio.socketio.SocketIONamespace;
@@ -46,11 +47,19 @@ public class ConstantsServer {
 	
 	public static int PROTOCOLFLAG;
 	
-	public static BlockingQueue<byte[]> protocolResponseQueue = null;
+	public static PropertiesUtil ph = new PropertiesUtil("sysConfig.properties");
+		
+	public static BlockingQueue<byte[]> protocolResponseQueue = new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("protocolResponseQueue").trim()));
 	
-	public static BlockingQueue<byte[]> maxNumResponseQueue = null;
+	public static BlockingQueue<byte[]> maxNumResponseQueue = new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("maxNumResponseQueue").trim()));
 	
-	public static LinkedBlockingQueue<byte[]> sendOrderQueue =null;
+	public static LinkedBlockingQueue<byte[]> sendOrderQueue =new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("sendOrderQueue").trim()));
+	
+//	public static BlockingQueue<byte[]> protocolResponseQueue = null;
+//	
+//	public static BlockingQueue<byte[]> maxNumResponseQueue = null;
+//	
+//	public static LinkedBlockingQueue<byte[]> sendOrderQueue =null;
 	
 	public static int SYSINFOFLAG;
 	
@@ -75,7 +84,7 @@ public class ConstantsServer {
     		config.setKeyStorePassword("qwerty");
     		InputStream stream;
             try {
-                stream = new FileInputStream(new File("/home/crt/crt/java/apache-tomcat-8.5.31/conf/shfqkeystore.jks"));
+                stream = new FileInputStream(new File("/home/crt/tomcat-7.0.78/conf/shfqkeystore.jks"));
                 config.setKeyStore(stream);
                
             }
@@ -89,6 +98,6 @@ public class ConstantsServer {
 		chatnamespace = ConstantsServer.server.addNamespace("/chat");
 		sysinfonamespace = ConstantsServer.server.addNamespace("/sysinfo");
 
-	} 
+	}
 
 }

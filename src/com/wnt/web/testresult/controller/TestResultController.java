@@ -90,6 +90,19 @@ public class TestResultController {
 			return null;
 		}
 	}
+	
+	// 测试结果统计
+	@ResponseBody
+	@RequestMapping("/testresult/statisFind")
+	public List<Map<String, Object>> statisFind(String beginDate, String endDate) throws Exception {
+		try {
+			List<Map<String, Object>> list = testResultService.statisFind(beginDate, endDate);
+			return list;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 	/**
 	 * 测试结果 图形数据 ARP ICMP

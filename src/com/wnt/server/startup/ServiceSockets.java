@@ -151,14 +151,13 @@ public class ServiceSockets implements InitializingBean {
 				new Thread(new ReturnSysInfoThread(socketService)).start();
 				new Thread(new ReturnProtocolIdentityThread(protocolIdentityService)).start();
 				new Thread(new ReturnTestNumThread(socketService)).start();
-				new Thread(new TestThread(testSetupService,testExecuteService,pdfService)).start();
-				PropertiesUtil ph = new PropertiesUtil("sysConfig.properties");
-				ConstantsServer.protocolResponseQueue = new LinkedBlockingQueue<byte[]>(
-						Integer.valueOf(ph.readProperty("protocolResponseQueue").trim()));
-				ConstantsServer.maxNumResponseQueue = new LinkedBlockingQueue<byte[]>(
-						Integer.valueOf(ph.readProperty("maxNumResponseQueue").trim()));
-				ConstantsServer.sendOrderQueue = new LinkedBlockingQueue<byte[]>(
-						Integer.valueOf(ph.readProperty("sendOrderQueue").trim()));
+				//TODO
+//				new TestThread(testSetupService,testExecuteService,pdfService).start();
+//				new Thread(new TestThread(testSetupService,testExecuteService,pdfService)).start();
+//				PropertiesUtil ph = new PropertiesUtil("sysConfig.properties");
+//				ConstantsServer.protocolResponseQueue = new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("protocolResponseQueue").trim()));
+//				ConstantsServer.maxNumResponseQueue = new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("maxNumResponseQueue").trim()));
+//				ConstantsServer.sendOrderQueue = new LinkedBlockingQueue<byte[]>(Integer.valueOf(ph.readProperty("sendOrderQueue").trim()));
 				
 				UserEntity userEntity = loginService.queryUser(1);
 				if(userEntity != null) {

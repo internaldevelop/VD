@@ -187,7 +187,7 @@ function disabledButton(treeNode)
 {
 	if(treeNode.del == 1)
 	{
-    	$('#exprotData').attr('disabled', true);
+		$('#exprotData').attr('disabled', true);
     	$('#deleteData').attr('disabled', true);
     	$('#exprotData').attr('title', '数据包已删除!');
     	$('#deleteData').attr('title', '数据包已删除!');
@@ -327,5 +327,10 @@ $(document).ready(function(){
 		}
 	});
 	//点击删除数据包 end
+	
+	//点击查询统计
+	$('#statisData').click(function() {
+		parent.rightFrame.statisFind();
+	});
 	
 });
